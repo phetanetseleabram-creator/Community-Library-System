@@ -108,7 +108,7 @@ function Users() {
 }
 
 function App(){
-  return <BrowserRouter><Layout><Routes>
+   return <BrowserRouter basename="/Community-Library-System"><Layout><Routes>
     <Route path="/" element={<Dashboard/>}/><Route path="/books" element={<Books/>}/>
     <Route path="/transactions" element={<Transactions/>}/><Route path="/users" element={<Users/>}/>
   </Routes></Layout></BrowserRouter>;
